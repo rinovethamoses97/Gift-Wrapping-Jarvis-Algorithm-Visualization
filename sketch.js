@@ -35,7 +35,7 @@ function draw(){
     frameRate(3);
     background(0);
     hull.push(p);
-    q=points[(p.index+1)%points.length];
+    q=points[floor(random(points.length))];
     for(var i=0;i<points.length;i++){
         var r=points[i];
         if(orientation(p,r,q)){
